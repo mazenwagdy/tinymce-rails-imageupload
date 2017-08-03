@@ -74,6 +74,7 @@
         var inputs = form.getElementsByTagName('input');
         for(var i = 0; i < inputs.length; i++) {
           var ctrl = inputs[i];
+          ctrl.setAttribute('accept', '.jpg,.jpeg,.gif,.png');
 
           if(ctrl.tagName.toLowerCase() == 'input' && ctrl.type != "hidden") {
             if(ctrl.type == "file") {
